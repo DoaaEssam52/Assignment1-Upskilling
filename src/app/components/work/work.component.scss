@@ -1,0 +1,16 @@
+.nav-pills {
+  .nav-link {
+    background-color: transparent;
+    color: #000;
+
+    a {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 1.8;
+    }
+  }
+
+  .nav-link.active {
+    color: #2c98f0;
+  }
+}

@@ -1,0 +1,10 @@
+<div
+  class="about-card mb-3 px-4 pt-4"
+  *ngIf="card"
+  [style.--about-color]="card.aboutColor"
+>
+  <i class="about-card__icon" [class]="card.iconClass" [style.color]="card.aboutColor"></i>
+  <p class="about-card__title mt-3 mb-4">
+    {{ card.title }}
+  </p>
+</div>

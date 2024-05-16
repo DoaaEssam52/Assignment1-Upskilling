@@ -1,0 +1,20 @@
+<div class="p-5">
+  <app-header title="MY SPECIALTY" subtitle="MY SKILLS"></app-header>
+
+  <p class="description">
+    The Big Oxmox advised her not to do so, because there were thousands of bad
+    Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
+    didn’t listen. She packed her seven versalia, put her initial into the belt
+    and made herself on the way.
+  </p>
+
+  <div class="row">
+    <div *ngFor="let skill of skills" class="col-6 mb-3">
+      <app-skill
+        [title]="skill.title"
+        [percentage]="skill.percentage"
+        [progressColor]="skill.progressColor"
+      ></app-skill>
+    </div>
+  </div>
+</div>

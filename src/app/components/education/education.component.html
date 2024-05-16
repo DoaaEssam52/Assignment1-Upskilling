@@ -1,0 +1,9 @@
+<div class="p-5">
+  <app-header title="Education" subtitle="Education"></app-header>
+
+  <div id="accordion">
+    <ng-container *ngFor="let card of educationData; let i = index">
+      <app-education-card [cardIndex]="i" [card]="card"></app-education-card>
+    </ng-container>
+  </div>
+</div>

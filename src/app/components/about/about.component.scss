@@ -1,0 +1,16 @@
+.jumbotron {
+  background-color: #f9bf3f;
+
+  &__title {
+    font-size: 30px;
+    color: #000;
+  }
+
+  &__btn {
+    background-color: transparent;
+    font-size: 12px;
+    outline: none;
+    text-align: center;
+    padding: 2px 8px 0;
+  }
+}

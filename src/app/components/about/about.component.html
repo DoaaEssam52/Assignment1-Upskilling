@@ -1,0 +1,32 @@
+<div class="p-5">
+  <app-header title="ABOUT US" subtitle="WHO AM I?"></app-header>
+
+  <p>
+    <strong>Hi I'm Jackson Ford</strong> On her way she met a copy. The copy
+    warned the Little Blind Text, that where it came from it would have been
+    rewritten a thousand times and everything that was left from its origin
+    would be the word "and" and the Little Blind Text should turn around and
+    return to its own, safe country.
+  </p>
+
+  <p>
+    Even the all-powerful Pointing has no control about the blind texts it is an
+    almost unorthographic life One day however a small line of blind text by the
+    name of Lorem Ipsum decided to leave for the far World of Grammar.
+  </p>
+
+  <div class="row my-5">
+    <div *ngFor="let card of cardsData" class="col-md-3">
+      <app-about-card [card]="card"></app-about-card>
+    </div>
+  </div>
+
+  <div class="jumbotron jumbotron-fluid px-3 py-4 mb-5">
+    <div class="container">
+      <h2 class="jumbotron__title">
+        I am happy to know you that 300+ projects done sucessfully!
+      </h2>
+      <button class="jumbotron__btn mt-4">{{ "hire me" | uppercase }}</button>
+    </div>
+  </div>
+</div>

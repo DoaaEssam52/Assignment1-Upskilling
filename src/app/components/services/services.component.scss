@@ -1,0 +1,29 @@
+.scrollable-section {
+  height: 220px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../../../assets/images/cover_bg.jpg.webp");
+  background-size: cover;
+  background-position: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  .analytic {
+    text-align: center;
+
+    &__count {
+      font-size: 40px;
+      color: white;
+      font-weight: 700;
+      margin-bottom: 0.3em;
+    }
+    &__title {
+      color: rgba(255, 255, 255, 0.7);
+      text-transform: uppercase;
+      font-size: 14px;
+      letter-spacing: 5px;
+      margin-bottom: 2em;
+    }
+  }
+}

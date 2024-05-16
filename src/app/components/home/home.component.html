@@ -1,0 +1,16 @@
+<div class="carousel slide carousel-fade" id="home" data-bs-ride="carousel">
+  <div class="carousel-inner" *ngFor="let slide of slides; let i = index">
+    <div class="carousel-item position-relative" [class.active]="i">
+      <img class="w-100 border-success" [src]="slide.imgSrc" />
+      <div class="position-absolute slide-container">
+        <h1 class="title">{{ slide.title }} <br />{{ slide.subtitle }}</h1>
+        <p class="description">
+          {{ slide.desciption }}
+        </p>
+        <button class="btn btn-outline-dark rounded-0">
+          {{ slide.buttonText | uppercase }}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

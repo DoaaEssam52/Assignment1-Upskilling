@@ -1,0 +1,17 @@
+<label class="title">{{ title }}</label>
+
+<div class="position-relative">
+  <div class="progress">
+    <div
+      class="progress-bar"
+      [style.backgroundColor]="progressColor"
+      role="progressbar"
+      [style.width]="percentage + '%'"
+      [attr.aria-valuenow]="percentage"
+      aria-valuemin="0"
+      aria-valuemax="100"
+    ></div>
+  </div>
+
+  <div class="percentage" [style.color]="progressColor">{{ percentage }}%</div>
+</div>

@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("./assets/fonts/Quicksand/Quicksand-Regular.ttf") format("truetype");
+  /* Add other font variations (e.g., bold, italic) as needed */
+}
+
+body {
+  font-family: "Quicksand", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.8;
+  color: rgba(0, 0, 0, 0.7);
+  height: 100vh;
+}
+
+button.btn {
+  border-radius: 0 !important;
+  font-size: 12px !important;
+  color: #fff !important;
+}
+
+.btn-primary {
+  background-color: #2c98f0 !important;
+  border-color: #2c98f0 !important;
+}

@@ -1,0 +1,62 @@
+.service-card {
+  --skill-color: #000; // Default value
+
+  box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+  position: relative;
+  text-align: center;
+  margin-bottom: 80px;
+  border-bottom: 2px solid var(--skill-color);
+
+  &__title {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  &__data {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.8;
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  &__icon {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    right: 0;
+    width: 100px;
+    height: 50px;
+    display: table;
+    margin: 0 auto;
+    font-size: 30px;
+    color: #fff;
+    
+    &::before,
+    &::after {
+      position: absolute;
+      left: 0;
+      right: 0;
+      content: "";
+    }
+
+    &::before {
+      top: -30px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 50px 30px 50px;
+      border-color: transparent transparent var(--skill-color) transparent;
+    }
+
+    &::after {
+      bottom: -30px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 30px 50px 0 50px;
+      border-color: var(--skill-color) transparent transparent transparent;
+    }
+  }
+}

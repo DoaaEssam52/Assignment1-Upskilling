@@ -1,0 +1,51 @@
+<div class="p-5">
+  <app-header title="GET IN TOUCH" subtitle="CONTACT"></app-header>
+
+  <div class="row justify-content-between">
+    <div class="col-md-5">
+      <div class="d-flex align-items-center mb-4">
+        <div class="icon-container">
+          <i class="fas fa-globe"></i>
+        </div>
+        <a>info@domain.com</a>
+      </div>
+      <div class="d-flex align-items-center mb-4">
+        <div class="icon-container">
+          <i class="fas fa-map"></i>
+        </div>
+        <p>198 West 21th Street, Suite 721 New York NY 10016</p>
+      </div>
+      <div class="d-flex align-items-center mb-4">
+        <div class="icon-container">
+          <i class="fas fa-phone"></i>
+        </div>
+        <a>+123 456 7890</a>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="form-group mb-3">
+        <input type="text" placeholder="Name" class="form-control" />
+      </div>
+      <div class="form-group mb-3">
+        <input type="email" placeholder="Email" class="form-control" />
+      </div>
+      <div class="form-group mb-3">
+        <input type="text" placeholder="Subject" class="form-control" />
+      </div>
+      <div class="form-group mb-3">
+        <textarea
+          type="text"
+          placeholder="Message"
+          class="form-control"
+          rows="6"
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <button class="btn btn-primary">
+          {{ "Send Message" | uppercase }}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

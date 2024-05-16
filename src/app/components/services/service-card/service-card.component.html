@@ -1,0 +1,11 @@
+<div
+  class="service-card px-3 pt-5 py-3"
+  [style.--skill-color]="card.skillColor"
+>
+  <div class="service-card__icon" [style.backgroundColor]="card.skillColor">
+    <i class="icon-bulb" [class]="card.iconClass"></i>
+  </div>
+
+  <h5 class="service-card__title my-4 pt-2">{{ card.title }}</h5>
+  <p class="service-card__data">{{ card.description }}</p>
+</div>

@@ -1,0 +1,21 @@
+<div class="p-5">
+  <app-header title="MY WORK" subtitle="RECENT WORK"></app-header>
+
+  <ul class="nav nav-pills mb-2">
+    <li *ngFor="let tab of workTabs; let i = index" class="nav-item">
+      <a
+        class="nav-link"
+        [routerLink]="tab.routerLink"
+        [class.active]="i === activeTab"
+        (click)="activeTab = i"
+        >{{ tab.title }}</a
+      >
+    </li>
+  </ul>
+
+  <div class="row container">
+    <div *ngFor="let card of workData" class="col-md-6 my-3">
+      <app-work-card [card]="card"></app-work-card>
+    </div>
+  </div>
+</div>

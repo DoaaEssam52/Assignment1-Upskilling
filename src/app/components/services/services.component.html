@@ -1,0 +1,19 @@
+<div class="p-5">
+  <app-header
+    title="WHAT I DO?"
+    subtitle="HERE ARE SOME OF MY EXPERTISE"
+  ></app-header>
+
+  <div class="row">
+    <div *ngFor="let serviceCard of servicesCards" class="col-md-4">
+      <app-service-card [card]="serviceCard"></app-service-card>
+    </div>
+  </div>
+
+  <div class="scrollable-section row mb-5">
+    <div *ngFor="let analytic of analytics" class="col-3 analytic">
+      <h4 class="analytic__count">{{ analytic.count }}</h4>
+      <p class="analytic__title">{{ analytic.title }}</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+.card-img-top {
+  border-radius: 0;
+}
+
+.card-date {
+  color: rgba(0, 0, 0, 0.4) !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 10px;
+}
+
+.card-title {
+  font-size: 1rem;
+  color: #000;
+  letter-spacing: 1px;
+}
+
+.card-text {
+  font-size: 15px;
+  line-height: 1.8;
+  color: rgba(0, 0, 0, 0.7);
+}

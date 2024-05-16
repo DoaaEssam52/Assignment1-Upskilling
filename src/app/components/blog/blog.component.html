@@ -1,0 +1,9 @@
+<div class="p-5">
+  <app-header title="READ" subtitle="RECENT BLOG"></app-header>
+
+  <div class="row">
+    <div *ngFor="let blog of blogs" class="col-md-4">
+      <app-blog-card [card]="blog"></app-blog-card>
+    </div>
+  </div>
+</div>

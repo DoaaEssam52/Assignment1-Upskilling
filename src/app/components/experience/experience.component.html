@@ -1,0 +1,7 @@
+<div class="p-5">
+  <app-header title="Experience" subtitle="Work Experience"></app-header>
+
+  <ng-container *ngFor="let card of experienceData">
+    <app-experience-card [card]="card"></app-experience-card>
+  </ng-container>
+</div>

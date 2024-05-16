@@ -1,0 +1,17 @@
+.title {
+  font-size: 16px;
+  color: #000;
+  font-weight: 400;
+}
+
+.progress{
+    height: 7px;
+}
+
+.percentage{
+    position: absolute;
+    top: -10px;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: 12px;
+}
